@@ -6,6 +6,7 @@
 </head>
 <body>
 	<div id="header">
+		<div class="myImg"><a title="github" href="https://github.com/cuiyingchun"></a></div>
 		<div class="pImg"></div>
 		<p>Life doesn't get easier,you just get stronger</p>
 		<div class="pMy">
@@ -139,14 +140,13 @@
 				</div>
 			</div>
 			<div class="eBoxCon" id="tab3">
-				<h3>石家庄佳诚网络有限公司</h3>
-				<p>2017.4~2018.2</p>
+				<h3>自己的练习</h3>
+				<p>2018.4~2018.5</p>
 				<div>
 					<ul>
-						<li>负责web前端开发</li>
-						<li>有过一个手机APP的前端开发</li>
-						<li>其中设计了通讯录基本功能</li>
-						<li>还有部分地图功能编写</li>
+						<li>一个web的前端页面编写</li>
+						<li>个人简历的编写</li>
+						<li>一个vue的直播前端练习</li>
 					</ul>
 				</div>
 			</div>
@@ -168,22 +168,26 @@
 					<li>
 						<h3>校园培训：cocos2d小游戏</h3>
 						<p title="一个塔防类游戏，其中页面设计和编写，还包括动态实现血条功能，父类子类的设计.">一个塔防类游戏，其中页面设计和编写，还包括动态实现血条功能，父类子类的设计.</p>
+						<div class="toLink"><a class="toA" href="https://github.com/weijiyang/GoAwayTumour" title="小游戏">&gt;</a></div>
 					</li>
 					<li>
 						<h3>实习：一个微信端公众号</h3>
 						<p title="编写了一个微信公众号，有关会议的流程的，利用后台的传来的数据，进行前端编写.">编写了一个微信公众号，有关会议的流程的，利用后台的传来的数据，进行前端编写.</p>
+						<div class="toLink"><a class="toA" href="https://github.com/cuiyingchun/weixin_hds" title="微信公众号">&gt;</a></div>
 					</li>
 					<li>
 						<h3>实习：一个手机APP</h3>
 						<p title="一个手机APP，其中涉及通讯录的功能编写和地图的一些操作，直接通过API和数据库进行数据的增删改查操作。">一个手机APP，其中涉及通讯录的功能编写和地图的一些操作，直接通过API和数据库进行数据的增删改查操作。</p>
+						<div class="toLink"><a class="toA" href="https://github.com/cuiyingchun/oneApp" title="手机APP">&gt;</a></div>
 					</li>
 					<li>
-						<h3>一个便签的小程序</h3>
-						<p title="一个小便签的编写，前端部分已经完成，后端还未加入">一个小便签的编写，前端部分已经完成，后端还未加入。</p>
+						<h3>基于Vue的直播前端编写</h3>
+						<p title="正在编写一个有关直播的前端，是pc端的，兼容是向大的兼容，手机端如果要编写，需要重新编写">正在编写一个有关直播的前端，是pc端的，兼容是向大的兼容，手机端如果要编写，需要重新编写。</p>
+						<div class="toLink"><a class="toA" href="https://github.com/cuiyingchun/Vue_live" title="直播">&gt;</a></div>
 					</li>
 				</ul>
 			</div>
-			<p class="tMore">查看更多&gt;</p>
+			<p class="tMore"><a href="https://github.com/cuiyingchun" title="查看更多">查看更多&gt;</a></p>
 		</div>
 	</div>
 	<div id="contact">
@@ -200,6 +204,13 @@
 			<p>前端即兴趣，兴趣即未来</p>
 			<p>行路有良友，便是捷径</p>
 			<p>带上我吧，一起看到更大的世界</p>
+			<div class="contMy">
+				<ul>
+					<li><a title="github" href="https://github.com/cuiyingchun" style="background-image: url(./img/github.png);"></a></li>
+					<li><a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=3075382844&site=qq&menu=yes" style="background-image: url(./img/qq.png);"></a></li>
+					<li><a title="mail" href="mailto:3075382844@qq.com" style="background-image: url(./img/mail.png);"></a></li>
+				</ul>
+			</div>
 		</div>
 		<div class="cFooter">
 			Copyright@2018-5-3
@@ -227,32 +238,32 @@ $(function(){
 	 $(window).scroll(function(){
 		if($("#header").offset().top<=$(document).scrollTop()){
 			$("#slideOnly a").attr("class","");
-		 	$("a:eq(0)").attr("class","activeA");
+		 	$("#slideOnly a:eq(0)").attr("class","activeA");
 		 	$("#Top").css("display","block");
 		}
 		if($("#info").offset().top<=$(document).scrollTop()){
 			$("#slideOnly a").attr("class","");
-		 	$("a:eq(1)").attr("class","activeA");
+		 	$("#slideOnly a:eq(1)").attr("class","activeA");
 		 	$("#Top").css("display","block");
 		}
 		if($("#skill").offset().top<=$(document).scrollTop()){
 			$("#slideOnly a").attr("class","");
-		 	$("a:eq(2)").attr("class","activeA");
+		 	$("#slideOnly a:eq(2)").attr("class","activeA");
 		 	$("#Top").css("display","block");
 		}
 		if($("#experience").offset().top<=$(document).scrollTop()){
 			$("#slideOnly a").attr("class","");
-		 	$("a:eq(3)").attr("class","activeA");
+		 	$("#slideOnly a:eq(3)").attr("class","activeA");
 		 	$("#Top").css("display","block");
 		}
 		if($("#work").offset().top<=$(document).scrollTop()){
 			$("#slideOnly a").attr("class","");
-		 	$("a:eq(4)").attr("class","activeA");
+		 	$("#slideOnly a:eq(4)").attr("class","activeA");
 		 	$("#Top").css("display","block");
 		}
 		if($("#contact").offset().top<=$(document).scrollTop()){
 			$("#slideOnly a").attr("class","");
-		 	$("a:eq(5)").attr("class","activeA");
+		 	$("#slideOnly a:eq(5)").attr("class","activeA");
 		 	$("#Top").css("display","none");
 		}
 	});

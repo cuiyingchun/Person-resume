@@ -15,9 +15,24 @@ html,body{
 	background-color: #87b0a5;
 	color: white;
 	position: relative;
+	overflow: hidden;
+}
+.myImg a{
+	display: block;
+	background: url(./img/my.jpg) center center no-repeat;
+	border-radius:50%;
+	background-size: 100%;
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	box-shadow: 0 0 5px gray;
+	position: absolute;
+	top:5%;
+	left:5%;
+	clear:both;
 }
 .pImg{
-	background: url(./img/2.jpg) center center no-repeat;
+	background: url(./img/11.jpg) left center no-repeat;
 	border-radius:50%;
 	background-size: 100%;
 	width:150px;
@@ -52,6 +67,7 @@ html,body{
 	background-color: #109085;
 	color: white;
 	position: relative;
+	overflow: hidden;
 }
 #info>p{
 	font-size:26px;
@@ -335,11 +351,30 @@ html,body{
 	text-overflow:ellipsis;
 	white-space: nowrap;
 }
+.toLink{
+	text-align: left;
+	margin:0 30px;
+}
+.toLink .toA{
+	display: block;
+	width:25%;
+	height:30px;
+	color:#d8d4d4;
+	text-align: center;
+	border:1px solid #d8d4d4;
+	border-radius: 10px;
+}
+.toLink .toA:hover{
+	/*color:#4b85a0;*/
+	/*border:1px solid #4b85a0;*/
+	box-shadow: 0 0 5px #4b85a075;
+}
 .wBox .wBoxCon ul li:nth-child(odd){
 	margin-right:4%;
 }
-.tMore{
-
+.tMore>a{
+	cursor:pointer;
+	color:white;
 }
 #contact{
 	width:100%;
@@ -354,6 +389,28 @@ html,body{
 	font-size:26px;
 	position: relative;
 	top:10%;
+}
+#contact .contMy{
+	/*height:50px;*/
+	margin:20px 42%;
+	display: block;
+}
+#contact .contMy ul:after{
+	content: "";
+	display: block;
+	clear:both;
+}
+#contact .contMy ul li{
+	float: left;
+	margin:0 20px;
+}
+#contact .contMy ul li a{
+	width:30px;
+	height:30px;
+	display: block;
+	border-radius: 50%;
+	background-size: 100%;
+	opacity: 0.5;
 }
 .cBox{
 	margin-top:10%;
