@@ -223,6 +223,8 @@
 		<a href="#experience"></a>
 		<a href="#work"></a>
 		<a href="#contact"></a>
+		<audio id="music" autoplay="autoplay" loop="loop" preload="preload" src="img/piano.mp3"></audio>
+		<button id="music-switch" class="music-on"></button>
 	</div>
 	<div id="Top">^
 	</div>
@@ -234,6 +236,7 @@
 $(function(){
 	// console.log($(document).scrollTop());
 	var cheight=$(window).height();
+	MusicPlayer();
 	//滚动检测
 	 $(window).scroll(function(){
 		if($("#header").offset().top<=$(document).scrollTop()){
@@ -308,5 +311,33 @@ $(function(){
           $('#' + $(this).attr('title')).addClass('show');
       });
 })
+	//音乐播放
+	function MusicPlayer() {
+    //定义变量music为音频播放控件ID
+    var music=document.getElementById("music");
+    //定义变量music_button为播放图标按钮ID
+    var music_button=document.getElementById("music-switch");
+    //定义变量status作为当前播放状态并赋值
+    var status=1;
+    //使音频默认自动播放
+    // music_button.className="music-on";
+    music.play();
+    music_button.style.animation='ani-music 3s linear infinite';
+    //设置按钮点击事件
+    music_button.onclick=function(){
+        if (status > 0) {
+            music.pause();
+            // this.className="music-off"; 
+            music_button.style.animation='none';
+            status = 0;
+        }
+        else {
+            music.play();
+            // this.className="music-on"; 
+            music_button.style.animation='ani-music 3s linear infinite';
+            status = 1;
+        }
+    };
+}
 </script>
 </html>

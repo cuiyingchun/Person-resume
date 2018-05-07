@@ -459,6 +459,48 @@ html,body{
 	display: block;
 	background-color: rgba(0,0,0,0.1);
 }
+#music-switch{
+	background: url(./img/music.png) center center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: -18px;
+    border-radius: 50%;
+    border:0;
+    padding:0;
+    /*animation:ani-music 3s linear infinite;*/
+}
+#music-switch:hover{
+	opacity: 1;
+}
+.music-on{
+    animation:ani-music 3s linear infinite;
+    -webkit-animation:ani-music 3s linear infinite;
+}
+.music-off{
+	animation-fill-mode:forwards;
+	animation:none;
+}
+@-webkit-keyframes ani-music
+{
+    0% { -webkit-transform:rotate(0deg);}
+    25% { -webkit-transform:rotate(90deg);}
+    50% { -webkit-transform:rotate(180deg);}
+    75% { -webkit-transform:rotate(270deg);}
+    100% { -webkit-transform:rotate(360deg);}
+}
+@keyframes ani-music{
+	0%{transform:rotate(0deg);}
+	25%{transform:rotate(90deg);}
+	50%{transform:rotate(180deg);}
+	75%{transform:rotate(270deg);}
+	100%{transform:rotate(360deg);}
+}
 #slideOnly .activeA{
 	width:15px;
 	height:15px;
