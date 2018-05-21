@@ -392,8 +392,12 @@ html,body{
 }
 #contact .contMy{
 	/*height:50px;*/
-	margin:20px 42%;
+	margin:20px auto;
 	display: block;
+}
+#contact .contMy ul{
+	min-width:150px;
+	display: inline-block;
 }
 #contact .contMy ul:after{
 	content: "";
@@ -402,7 +406,7 @@ html,body{
 }
 #contact .contMy ul li{
 	float: left;
-	margin:0 20px;
+	margin:0 5%;
 }
 #contact .contMy ul li a{
 	width:30px;

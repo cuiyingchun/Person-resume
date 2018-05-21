@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8"/>
 <link rel="stylesheet" href="resume.css">
 	<title>崔迎春个人简历</title>
 </head>
@@ -310,7 +311,7 @@ $(function(){
           $(".tCon div").removeClass("show");
           $('#' + $(this).attr('title')).addClass('show');
       });
-})
+
 	//音乐播放
 	function MusicPlayer() {
     //定义变量music为音频播放控件ID
@@ -321,6 +322,8 @@ $(function(){
     var status=1;
     //使音频默认自动播放
     // music_button.className="music-on";
+    console.log(music);
+    console.log(music.play());
     music.play();
     music_button.style.animation='ani-music 3s linear infinite';
     //设置按钮点击事件
@@ -339,5 +342,7 @@ $(function(){
         }
     };
 }
+})
+	
 </script>
 </html>
